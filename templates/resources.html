@@ -1,0 +1,563 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+<!-- <html> -->
+
+<!-- <body> -->
+<!-- <div class="container"> -->
+
+<!-- <table id="orders-table" data-search="false" data-striped="true" data-pagination="true" data-filter-control="true" data-side-pagination="client" data-page-size="10" data-page-list="[10, 25, 50, 100, ALL]">
+    <thead>
+        <tr>
+            <th data-field="id" data-halign="left" data-align="right" data-filter-control="input">ID</th>
+            <th data-field="status" data-filter-control="select">Status</th>
+            <th data-field="received" data-filter-control="datepicker" data-filter-datepicker-options='{"autoclose":true, "clearBtn": true, "todayHighlight": true, "orientation": "top"}'>Received</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>231</td>
+            <td>In Progress</td>
+            <td>07/02/2015</td>
+        </tr>
+        <tr>
+            <td>230</td>
+            <td>Cancelled</td>
+            <td>07/05/2015</td>
+        </tr>
+        <tr>
+            <td>219</td>
+            <td>Complete</td>
+            <td>07/09/2015</td>
+        </tr>
+    </tbody>
+</table> -->
+<div class = 'row'>
+<div class = 'col-sm-10 col-sm-offset-1'>
+
+<h1 class = 'text-align-center'>Recordings and Software</h1>
+<hr>
+<h3 class = 'text-align-center'>This page summarises the recordings and software yielded from projects of FIST.</h3>
+
+
+<hr>
+
+<h2>Non-word repetition sets: Universal Non-Word Repetition (UNWR) and CNRep</h2>
+
+<h4>
+Three sets of non-word repetition sets are available below, yielded from the following work.
+<br><br>
+<p>
+Howell, P., Tang, K., Tuomainen, O., Chan, S. K., Beltran, K., Mirawdeli, A. and Harris, J. (2017) Identification of fluency and word-finding difficulty in samples of children with diverse language backgrounds. International Journal of Language & Communication Disorders 52(5). 595-611. http://dx.doi.org/10.1111/1460-6984.12305
+[<a href="http://onlinelibrary.wiley.com/doi/10.1111/1460-6984.12305/full/">DOI</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_UNWR_2017.pdf" %}' download>pdf</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_2017_UNWR.bib" %}' download>bib</a>]
+</p>
+In this paper, we proposed a "universal" non-word repetition (UNWR) test designed for 20 Indo-European languages (English, Polish, Romanian, European Portuguese, Bulgarian, Serbo-Croat-Bosnian, Czech, Dutch, French, German, Hungarian, Slovene, Swedish, Danish, Norwegian, Russian, Latvian, Ukrainian, Urdu-Hindi and Bengali).
+To complement this test set, we made the test set available in both audio and phonetic transcription formats. Methodologically, this would allow researchers and school teachers to apply this test set with ease, as well as improving replicability of research findings.
+<br><br>
+(Please note: In the paper, the stimuli presented were slightly different from the ones listed here, however they conform with what is said here. In the paper, the stimuli were presented live (as opposed to pre-recorded), therefore they are most similar to the Standard Souther British English version of UNWR with slightly different stress patterns and vowel quality in some of the non-words.)
+<br><br>
+Currently, two versions of UNWR are available. They differ in terms of the pronunciation (phones and stress patterns). Furthermore, we also made the well-known CNRep (Gathercole et al. 1994) non-word repetition set available for ease of application and comparison with UNWR.
+<br><br>
+The speaker in the audio stimuli was Dr. Geoff Lindsey, a professional phonetician and a speech coach (<a href="http://englishspeechservices.com/">http://englishspeechservices.com/</a>). <br>
+The phonetic transcription in the written stimuli is based on CUBE (Current British English searchable transcriptions) <a href="http://seas3.elte.hu/cube/">http://seas3.elte.hu/cube/</a>, a searchable pronunication dictionary that reflects the accent of contemporary Southern British English.
+<br><br>
+Please click on the following bars for more details of the three non-word repetition sets.
+<br><br>
+</h4>
+<div class="panel-group" id="accordion">
+ <div class="panel panel-default">
+   <div class="panel-heading">
+     <h4 class="panel-title">
+       <a data-toggle="collapse" data-parent="#accordion" href="#collapse_unwr_set1">
+       Non-word repetition set: Universal Non-Word Repetition (UNWR) -- Universal Version</a>
+     </h4>
+   </div>
+   <div id="collapse_unwr_set1" class="panel-collapse collapse">
+     <div class="panel-body">
+       <h2>Non-word repetition set: Universal Non-Word Repetition (UNWR) -- Universal Version</h2>
+
+       <h3>Citation</h3>
+       <h4>
+       If you have used this set of stimuli (printed or audio format) in any way, please cite:<br><br>
+       <p>
+       Howell, P., Tang, K., Tuomainen, O., Chan, S. K., Beltran, K., Mirawdeli, A. and Harris, J. (2017) Identification of fluency and word-finding difficulty in samples of children with diverse language backgrounds. International Journal of Language & Communication Disorders 52(5). 595-611. http://dx.doi.org/10.1111/1460-6984.12305
+      [<a href="http://onlinelibrary.wiley.com/doi/10.1111/1460-6984.12305/full/">DOI</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_UNWR_2017.pdf" %}' download>pdf</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_2017_UNWR.bib" %}' download>bib</a>]
+       </p>
+       </h4>
+
+
+
+       <div class="row">
+       <div class='col-sm-5 text-align-left'>
+       <h3>About the test set</h3>
+       This version of UNWR is the "Universal" set. It is not based on a particular accent/language in terms of phones and stress patterns. The stress patterns were "neutral" such that there isn't a particular syllable being stressed. <br> This set contains 12 items per syllable size, from 2 syllables to 5 syllables. For each syllable size, there are two practise items: they are Word 1 and Word 2 (2-Syllable), Word 13 and Word 14 (3-Syllable), Word 25 and Word 26 (4-Syllable), and Word 37 and Word 38 (5-Syllable).
+       The sound files are named in the following format: <i>Word[Number]_[Orthographic form of the item].wav</i>.
+       </div>
+
+       <div class='col-sm-5 text-align-left'>
+       <h3>About the test procedure</h3>
+       We recommend you start with the 2-syllable items, and gradually increase the syllable size complexity. To keep the task brief, a child has to get at least seven items out of ten items correct to progress to the next syllable length, otherwise the task ends there. The final score is the number of non-words correct.
+       </div>
+       </div>
+
+       <div class="row">
+       <div class='col-sm-5'>
+       <h3>About the speaker</h3>
+       <ul>
+         <li>Name: Dr. Geoff Lindsey</li>
+         <li>Background: The speaker is a professional phonetician and a speech coach (<a href="http://englishspeechservices.com/">http://englishspeechservices.com/</a>)</li>
+         <li>Native language and accent: British English (Standard Southern British English)</li>
+         <li>Gender: Male</li>
+         <li>Age: mid-50's</li>
+       </ul>
+       </div>
+       <div class='col-sm-5'>
+       <h3>About the sound files</h3>
+       <ul>
+         <li>Format: wav</li>
+         <li>Channel: Mono</li>
+         <li>Sample rate: 44100 Hz
+         <li>Description: All stimuli have the same absolute duration (padded with silence), in each the sound portion is centered. They have been high-pass filtered at 50 Hz, and intensity normalised at 65dB.
+         <li>
+                 <a data-toggle="collapse" href="#collapse_unwr_uni">Processing Steps: (Click to see details)</a>
+                 <div id="collapse_unwr_uni" class="panel-collapse collapse">
+                   <ol class="list-group">
+                     <li>The recording was made in a professional sound booth at University College London.</li>
+                     <li>The recording was manually divided into individual stimuli with generous amount of silence before and after each stimulus.</li>
+                     <li>ProsodyAligner was used to detect word boundaries objectively with an English Forced-alignment model.</li>
+                     <li>1s silence was added to the start and the end of each stimulus.</li>
+                     <li>The word boundaries from ProsodyAligner were then shifted by 0.2 sec outwards to be conservative.</li>
+                     <li>The stimuli were extracted again using the adjusted word boundaries.</li>
+                     <li>The stimuli were duration-normalised (i.e. identical duration) by padding sufficient amount of silence before and after each stimulus to match the duration of the longest stimulus.</li>
+                     <li>The duration-normalised stimuli were then high-pass filtered at 50Hz, and intensity normalised at 65dB using Praat.</li>
+                   </ol>
+                 </div>
+         </li>
+       </ul>
+       </div>
+       </div>
+
+       <h3>Stimuli Breakdown for UNWR (Universal)</h3>
+       <div style="overflow-x:auto;">
+         <table id="unwr"; width=100%;>
+           <tr>
+             <th>Syllable Size</th>
+             <th>Number of Items</th>
+             <th>Audio Samples</th>
+             <th>Download Sound<br>(.wav in .zip)</th>
+             <th>Download Transcription<br>(.xls and .pdf)</th>
+           </tr>
+           <tr>
+             <td>All</td>
+             <td>All</td>
+             <td>
+             </td>
+             <td><a href='{% static "UNWR_dataset/Universal/wavs/UNWR_Universal_wavs_SyllAll.zip" %}' download>UNWR_Universal_trans_SyllAll.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_SyllAll.xls" %}' download>UNWR_Universal_trans_SyllAll.xls</a><br>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_SyllAll.pdf" %}' download>UNWR_Universal_trans_SyllAll.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>12</td>
+             <td>
+             "plumpom"<br>[plum.pom]
+             <audio controls><source src="{% static 'UNWR_dataset/Universal/wavs/Syll2/Word01_plumpom.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/Universal/wavs/UNWR_Universal_wavs_Syll2.zip" %}' download>UNWR_Universal_wavs_Syll2.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll2.xls" %}' download>UNWR_Universal_trans_Syll2.xls</a><br>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll2.pdf" %}' download>UNWR_Universal_trans_Syll2.pdf</a>
+             </td>
+
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>12</td>
+             <td>
+             "ɡokimap"<br>[ɡo.ki.map]
+             <audio controls><source src="{% static 'UNWR_dataset/Universal/wavs/Syll3/Word13_gokimap.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/Universal/wavs/UNWR_Universal_wavs_Syll3.zip" %}' download>UNWR_Universal_wavs_Syll3.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll3.xls" %}' download>UNWR_Universal_trans_Syll3.xls</a><br>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll3.pdf" %}' download>UNWR_Universal_trans_Syll3.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>4</td>
+             <td>12</td>
+             <td>
+             "puplutende"<br>[pu.plu.ten.de]
+             <audio controls><source src="{% static 'UNWR_dataset/Universal/wavs/Syll4/Word25_puplutende.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/Universal/wavs/UNWR_Universal_wavs_Syll4.zip" %}' download>UNWR_Universal_wavs_Syll4.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll4.xls" %}' download>UNWR_Universal_trans_Syll4.xls</a><br>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll4.pdf" %}' download>UNWR_Universal_trans_Syll4.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>5</td>
+             <td>12</td>
+             <td>
+             "pluturukompi"<br>[plu.tu.ru.kom.pi]
+             <audio controls><source src="{% static 'UNWR_dataset/Universal/wavs/Syll5/Word37_pluturukompi.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/Universal/wavs/UNWR_Universal_wavs_Syll5.zip" %}' download>UNWR_Universal_wavs_Syll5.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll5.xls" %}' download>UNWR_Universal_trans_Syll5.xls</a><br>
+                 <a href='{% static "UNWR_dataset/Universal/trans/UNWR_Universal_trans_Syll5.pdf" %}' download>UNWR_Universal_trans_Syll5.pdf</a>
+             </td>
+           </tr>
+         </table>
+       </div>
+
+     </div>
+   </div>
+ </div>
+ <div class="panel panel-default">
+   <div class="panel-heading">
+     <h4 class="panel-title">
+       <a data-toggle="collapse" data-parent="#accordion" href="#collapse_unwr_set2">
+       Non-word repetition set: Universal Non-Word Repetition (UNWR) -- Standard Southern British English Version</a>
+     </h4>
+   </div>
+   <div id="collapse_unwr_set2" class="panel-collapse collapse">
+     <div class="panel-body">
+       <h2>Non-word repetition set: Universal Non-Word Repetition (UNWR) -- Standard Southern British English Version</h2>
+
+       <h3>Citation</h3>
+       <h4>
+       If you have used this set of stimuli (printed or audio format) in any way, please cite:<br><br>
+       <p>
+       Howell, P., Tang, K., Tuomainen, O., Chan, S. K., Beltran, K., Mirawdeli, A. and Harris, J. (2017) Identification of fluency and word-finding difficulty in samples of children with diverse language backgrounds. International Journal of Language & Communication Disorders 52(5). 595-611. http://dx.doi.org/10.1111/1460-6984.12305
+       [<a href="http://onlinelibrary.wiley.com/doi/10.1111/1460-6984.12305/full/">DOI</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_UNWR_2017.pdf" %}' download>pdf</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_2017_UNWR.bib" %}' download>bib</a>]
+       </p>
+       </h4>
+
+
+
+       <div class="row">
+       <div class='col-sm-5 text-align-left'>
+       <h3>About the test set</h3>
+       This version of UNWR is the "Standard Southern British English" version. It is based on the Standard Southern British English accent in terms of phones and stress patterns. The stress patterns were determined by minimising the number of stresses per word and allowing stray syllables in words with odd number of syllables. <br> This set contains 12 items per syllable size, from 2 syllables to 5 syllables. For each syllable size, there are two practise items: they are Word 1 and Word 2 (2-Syllable), Word 13 and Word 14 (3-Syllable), Word 25 and Word 26 (4-Syllable), and Word 37 and Word 38 (5-Syllable).
+       The sound files are named in the following format: <i>Word[Number]_[Orthographic form of the item].wav</i>.
+       </div>
+
+       <div class='col-sm-5 text-align-left'>
+       <h3>About the test procedure</h3>
+       We recommend you start with the 2-syllable items, and gradually increase the syllable size complexity. To keep the task brief, a child has to get at least seven items out of ten items correct to progress to the next syllable length, otherwise the task ends there. The final score is the number of non-words correct.
+       </div>
+       </div>
+
+       <div class="row">
+       <div class='col-sm-5'>
+       <h3>About the speaker</h3>
+       <ul>
+         <li>Name: Dr. Geoff Lindsey</li>
+         <li>Background: The speaker is a professional phonetician and a speech coach (<a href="http://englishspeechservices.com/">http://englishspeechservices.com/</a>)</li>
+         <li>Native language and accent: British English (Standard Southern British English)</li>
+         <li>Gender: Male</li>
+         <li>Age: mid-50's</li>
+       </ul>
+       </div>
+       <div class='col-sm-5'>
+       <h3>About the sound files</h3>
+       <ul>
+         <li>Format: wav</li>
+         <li>Channel: Mono</li>
+         <li>Sample rate: 44100 Hz
+         <li>Description: All stimuli have the same absolute duration (padded with silence), in each the sound portion is centered. They have been high-pass filtered at 50 Hz, and intensity normalised at 65dB.
+         <li>
+                 <a data-toggle="collapse" href="#collapse_unwr_ssbe">Processing Steps: (Click to see details)</a>
+                 <div id="collapse_unwr_ssbe" class="panel-collapse collapse">
+                   <ol class="list-group">
+                     <li>The recording was made in a professional sound booth at University College London.</li>
+                     <li>The recording was manually divided into individual stimuli with generous amount of silence before and after each stimulus.</li>
+                     <li>ProsodyAligner was used to detect word boundaries objectively with an English Forced-alignment model.</li>
+                     <li>1s silence was added to the start and the end of each stimulus.</li>
+                     <li>The word boundaries from ProsodyAligner were then shifted by 0.2 sec outwards to be conservative.</li>
+                     <li>The stimuli were extracted again using the adjusted word boundaries.</li>
+                     <li>The stimuli were duration-normalised (i.e. identical duration) by padding sufficient amount of silence before and after each stimulus to match the duration of the longest stimulus.</li>
+                     <li>The duration-normalised stimuli were then high-pass filtered at 50Hz, and intensity normalised at 65dB using Praat.</li>
+                   </ol>
+                 </div>
+         </li>
+       </ul>
+       </div>
+       </div>
+
+       <h3>Stimuli Breakdown for UNWR (Standard Southern British English)</h3>
+       <div style="overflow-x:auto;">
+         <table id="unwr"; width=100%;>
+           <tr>
+             <th>Syllable Size</th>
+             <th>Number of Items</th>
+             <th>Audio Samples</th>
+             <th>Download Sound<br>(.wav in .zip)</th>
+             <th>Download Transcription<br>(.xls and .pdf)</th>
+           </tr>
+           <tr>
+             <td>All</td>
+             <td>All</td>
+             <td>
+             </td>
+             <td><a href='{% static "UNWR_dataset/SSBE/wavs/UNWR_SSBE_wavs_SyllAll.zip" %}' download>UNWR_SSBE_wavs_SyllAll.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_SyllAll.xls" %}' download>UNWR_SSBE_trans_SyllAll.xls</a><br>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_SyllAll.pdf" %}' download>UNWR_SSBE_trans_SyllAll.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>12</td>
+             <td>
+             "plumpom"<br>[ˈplʌm.pəm]
+             <audio controls><source src="{% static 'UNWR_dataset/SSBE/wavs/Syll2/Word01_PLUMpom.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/SSBE/wavs/UNWR_SSBE_wavs_Syll2.zip" %}' download>UNWR_SSBE_wavs_Syll2.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll2.xls" %}' download>UNWR_SSBE_trans_Syll2.xls</a><br>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll2.pdf" %}' download>UNWR_SSBE_trans_Syll2.pdf</a>
+             </td>
+
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>12</td>
+             <td>
+             "ɡokimap"<br>[ɡə.ˈkɪ.məp]
+             <audio controls><source src="{% static 'UNWR_dataset/SSBE/wavs/Syll3/Word13_goKImap.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/SSBE/wavs/UNWR_SSBE_wavs_Syll3.zip" %}' download>UNWR_SSBE_wavs_Syll3.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll3.xls" %}' download>UNWR_SSBE_trans_Syll3.xls</a><br>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll3.pdf" %}' download>UNWR_SSBE_trans_Syll3.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>4</td>
+             <td>12</td>
+             <td>
+             "puplutende"<br>[ˌpɵ.plə.ˈtɛn.di]
+             <audio controls><source src="{% static 'UNWR_dataset/SSBE/wavs/Syll4/Word25_PUpluTENde.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/SSBE/wavs/UNWR_SSBE_wavs_Syll4.zip" %}' download>UNWR_SSBE_wavs_Syll4.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll4.xls" %}' download>UNWR_SSBE_trans_Syll4.xls</a><br>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll4.pdf" %}' download>UNWR_SSBE_trans_Syll4.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>5</td>
+             <td>12</td>
+             <td>
+             "pluturukompi"<br>[plə.ˌtɵ.ɹə.ˈkɔm.pi]
+             <audio controls><source src="{% static 'UNWR_dataset/SSBE/wavs/Syll5/Word37_pluTUruKOMpi.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/SSBE/wavs/UNWR_SSBE_wavs_Syll5.zip" %}' download>UNWR_SSBE_wavs_Syll5.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll5.xls" %}' download>UNWR_SSBE_trans_Syll5.xls</a><br>
+                 <a href='{% static "UNWR_dataset/SSBE/trans/UNWR_SSBE_trans_Syll5.pdf" %}' download>UNWR_SSBE_trans_Syll5.pdf</a>
+             </td>
+           </tr>
+         </table>
+       </div>
+
+     </div>
+   </div>
+ </div>
+ <div class="panel panel-default">
+   <div class="panel-heading">
+     <h4 class="panel-title">
+       <a data-toggle="collapse" data-parent="#accordion" href="#collapse_unwr_set3">
+       Non-word repetition set: CNRep</a>
+     </h4>
+   </div>
+   <div id="collapse_unwr_set3" class="panel-collapse collapse">
+     <div class="panel-body">
+
+
+       <h2>Non-word repetition set: CNRep</h2>
+
+       <h3>Citation</h3>
+       <h4>
+       If you have used this set of stimuli (printed or audio format) in any way, please cite <u><i>BOTH</i></u> of the following publications:<br><br>
+       <p>
+       Howell, P., Tang, K., Tuomainen, O., Chan, S. K., Beltran, K., Mirawdeli, A. and Harris, J. (2017) Identification of fluency and word-finding difficulty in samples of children with diverse language backgrounds. International Journal of Language & Communication Disorders 52(5). 595-611. http://dx.doi.org/10.1111/1460-6984.12305
+       [<a href="http://onlinelibrary.wiley.com/doi/10.1111/1460-6984.12305/full/">DOI</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_UNWR_2017.pdf" %}' download>pdf</a>] [<a href='{% static "citations/Howell_Tang_Harris_IJLCD_2017_UNWR.bib" %}' download>bib</a>]
+       </p>
+
+       <p>
+       Gathercole, S. E., Willis, C. S., Baddeley, A., & Emslie, H. (1994). The Children's Test of Nonword Repetition: a test of phonological working memory. 2(2), 103-27. Doi:10.1080/09658219408258940
+       [<a href="http://www.tandfonline.com/doi/abs/10.1080/09658219408258940">DOI</a>] [<a href='{% static "citations/Cathercole_Willis_Baddeley_Emslie_Memory_1994_CNRep.bib" %}' download>bib</a>]
+       </p>
+
+       </h4>
+
+       <div class="row">
+       <div class='col-sm-5 text-align-left'>
+       <h3>About the test set</h3>
+       This version of CNRep is based on Gathercole et al (1994). The major differences are that the phonetic transcription is based on the Standard Southern British English accent in terms of phones and stress patterns as well as having two additional trial items per syllable size (kindly provided by Prof. Susan E. Gathercole). <br> This set contains 12 items per syllable size, from 2 syllables to 5 syllables. For each syllable size, there are two practise items: they are Word 1 and Word 2 (2-Syllable), Word 13 and Word 14 (3-Syllable), Word 25 and Word 26 (4-Syllable), and Word 37 and Word 38 (5-Syllable). The sound files are named in the following format: <i>Word[Number]_[Orthographic form of the item].wav</i>.
+       </div>
+
+       <div class='col-sm-5 text-align-left'>
+       <h3>About the test procedure</h3>
+       We recommend you start with the 2-syllable items, and gradually increase the syllable size complexity. To keep the task brief, a child has to get at least seven items out of ten items correct to progress to the next syllable length, otherwise the task ends there. The final score is the number of non-words correct.
+       </div>
+       </div>
+
+       <div class="row">
+       <div class='col-sm-5'>
+       <h3>About the speaker</h3>
+       <ul>
+         <li>Name: Dr. Geoff Lindsey</li>
+         <li>Background: The speaker is a professional phonetician and a speech coach (<a href="http://englishspeechservices.com/">http://englishspeechservices.com/</a>)</li>
+         <li>Native language and accent: British English (Standard Southern British English)</li>
+         <li>Gender: Male</li>
+         <li>Age: mid-50's</li>
+       </ul>
+       </div>
+       <div class='col-sm-5'>
+       <h3>About the sound files</h3>
+       <ul>
+         <li>Format: wav</li>
+         <li>Channel: Mono</li>
+         <li>Sample rate: 44100 Hz
+         <li>Description: All stimuli have the same absolute duration (padded with silence), in each the sound portion is centered. They have been high-pass filtered at 50 Hz, and intensity normalised at 65dB.
+         <li>
+                 <a data-toggle="collapse" href="#collapse_cnrep">Processing Steps: (Click to see details)</a>
+                 <div id="collapse_cnrep" class="panel-collapse collapse">
+                   <ol class="list-group">
+                     <li>The recording was made in a professional sound booth at University College London.</li>
+                     <li>The recording was manually divided into individual stimuli with generous amount of silence before and after each stimulus.</li>
+                     <li>ProsodyAligner was used to detect word boundaries objectively with an English Forced-alignment model.</li>
+                     <li>1s silence was added to the start and the end of each stimulus.</li>
+                     <li>The word boundaries from ProsodyAligner were then shifted by 0.2 sec outwards to be conservative.</li>
+                     <li>The stimuli were extracted again using the adjusted word boundaries.</li>
+                     <li>The stimuli were duration-normalised (i.e. identical duration) by padding sufficient amount of silence before and after each stimulus to match the duration of the longest stimulus.</li>
+                     <li>The duration-normalised stimuli were then high-pass filtered at 50Hz, and intensity normalised at 65dB using Praat.</li>
+                   </ol>
+                 </div>
+         </li>
+       </ul>
+       </div>
+       </div>
+
+       <h3>Stimuli Breakdown for CNRep</h3>
+       <div style="overflow-x:auto;">
+         <table id="unwr"; width=100%;>
+           <tr>
+             <th>Syllable Size</th>
+             <th>Number of Items</th>
+             <th>Audio Samples</th>
+             <th>Download Sound<br>(.wav in .zip)</th>
+             <th>Download Transcription<br>(.xls and .pdf)</th>
+           </tr>
+           <tr>
+             <td>All</td>
+             <td>All</td>
+             <td>
+             </td>
+             <td><a href='{% static "UNWR_dataset/CNRep/wavs/CNRep_wavs_SyllAll.zip" %}' download>CNRep_wavs_SyllAll.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_SyllAll.xls" %}' download>CNRep_trans_SyllAll.xls</a><br>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_SyllAll.pdf" %}' download>CNRep_trans_SyllAll.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>12</td>
+             <td>
+             "sermat"<br>[ˈsəː.mət]
+             <audio controls><source src="{% static 'UNWR_dataset/CNRep/wavs/Syll2/Word01_sermat.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/CNRep/wavs/CNRep_wavs_Syll2.zip" %}' download>CNRep_wavs_Syll2.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll2.xls" %}' download>CNRep_trans_Syll2.xls</a><br>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll2.pdf" %}' download>CNRep_trans_Syll2.pdf</a>
+             </td>
+
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>12</td>
+             <td>
+             "fonamit"<br>[ˈfɔ.nə.mɪt]
+             <audio controls><source src="{% static 'UNWR_dataset/CNRep/wavs/Syll3/Word13_fonamit.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/CNRep/wavs/CNRep_wavs_Syll3.zip" %}' download>CNRep_wavs_Syll3.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll3.xls" %}' download>CNRep_trans_Syll3.xls</a><br>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll3.pdf" %}' download>CNRep_trans_Syll3.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>4</td>
+             <td>12</td>
+             <td>
+             "munnatalic"<br>[ˌmʌ.nə.ˈta.lɪk]
+             <audio controls><source src="{% static 'UNWR_dataset/CNRep/wavs/Syll4/Word25_munnatalic.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/CNRep/wavs/CNRep_wavs_Syll4.zip" %}' download>CNRep_wavs_Syll4.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll4.xls" %}' download>CNRep_trans_Syll4.xls</a><br>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll4.pdf" %}' download>CNRep_trans_Syll4.pdf</a>
+             </td>
+           </tr>
+           <tr>
+             <td>5</td>
+             <td>12</td>
+             <td>
+             "molipadary"<br>[ˌməw.lɪ.ˈpɛj.də.ɹi]
+             <audio controls><source src="{% static 'UNWR_dataset/CNRep/wavs/Syll5/Word37_molipadary.wav' %}" type="audio/wav" />
+             </audio>
+             </td>
+             <td><a href='{% static "UNWR_dataset/CNRep/wavs/CNRep_wavs_Syll5.zip" %}' download>CNRep_wavs_Syll5.zip</a></td>
+             <td>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll5.xls" %}' download>CNRep_trans_Syll5.xls</a><br>
+                 <a href='{% static "UNWR_dataset/CNRep/trans/CNRep_trans_Syll5.pdf" %}' download>CNRep_trans_Syll5.pdf</a>
+             </td>
+           </tr>
+         </table>
+       </div>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+
+<hr>
+<!-- </div>-->
+
+
+<!-- </body> -->
+<!-- </html> -->
+{% endblock %}
+
+
+<!-- <div class = 'row'>
+<div class = 'col-sm-6 col-sm-offset-3'>
+<h1>Explore SLOE</h1>
+<p> This is about us.  This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us.</p>
+<p> This is about us.  This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us.</p>
+<p> This is about us.  This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us.</p>
+
+</div>
+</div> -->

@@ -1,0 +1,50 @@
+{% load staticfiles %}
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+
+    <!--collapseable list-->
+    <!--<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>-->
+    <!--<script src="{% static 'js/jquery.mobile-1.4.5.min.js' %}"></script>-->
+
+    <script src="{% static 'js/jquery.min.3.1.0.js' %}"></script>
+    <!--<script src="{% static 'js/bootstrap.min.js' %}"></script>-->
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+
+    <!--<script src="{% static 'js/bootstrap-table-zh-CN.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-table.min.js' %}"></script>-->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+        <!-- <link rel="stylesheet" href="../assets/examples.css"> -->
+    <!--<script src="{% static 'js/jquery.min.js' %}"></script>-->
+    <!--<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>-->
+    <script src="{% static 'bootstrap-table/src/bootstrap-table.js' %}"></script>
+    <!-- <script src="{% static 'bootstrap-table/src/extensions/filter-control/bootstrap-table-filter.js' %}"></script> -->
+    <script src="{% static 'bootstrap-table/src/extensions/filter-control/bootstrap-table-filter-control.js' %}"></script>
+    <script src="{% static 'bootstrap-table/src/extensions/filter/bootstrap-table-filter.js' %}"></script>
+
+
+    <script src="{% static 'bootstrap-table/src/extensions/export/bootstrap-table-export.js' %}"></script>
+    <script src="{% static 'bootstrap-table/src/extensions/export/tableExport.js' %}"></script>
+    <script src="{% static 'bootstrap-table/src/extensions/export/jquery.base64.js' %}"></script>
+
+    <!--Bootstrap player 3-->
+    <script src="{% static 'js/bootstrap3_player.js' %}"></script>
+
+    <!--Custom js-->
+    <script src="{% static 'js/custom.js' %}"></script>
+
+    <script>
+    var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })
+    </script>

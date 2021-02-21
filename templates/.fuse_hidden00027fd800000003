@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+
+
+{% block content %}
+<!-- <html> -->
+
+<!-- <body> -->
+<!-- <div class="container"> -->
+
+    <div id="toolbar">
+        <select class="form-control">
+            <option value="">Export Basic</option>
+            <option value="all">Export All</option>
+            <option value="selected">Export Selected</option>
+        </select>
+    </div>
+
+<!--                         data-url="wf/Admin/simplifiedProcesses" data-cache="false"
+                        data-height="600" data-click-to-select="true" data-striped="true"
+                        data-pagination="true" data-search="true" data-sort-order="desc"
+                        data-sort-name="creationTime" data-show-columns="true" data-show-filter="true"
+                        data-show-refresh="true" data-page-size="50"
+                        data-page-list='[50, 75, 100, 200, 300, 500'> 
+                                  data-show-filter="true"            data-show-filter="true"-->
+           <!-- data-sortable = "true" -->
+    <table id="table"
+           data-toggle="tabdle"
+           data-show-export="true"
+           data-pagination="true"
+           data-click-to-select="true"           
+           data-url="{% static 'json/corpus.eng.allophonic.reordered.json' %}"
+           data-toolbar="#toolbar"
+           data-filter-control="true"
+           data-show-columns="true"
+
+
+           >
+        <thead>
+        <tr>
+	        <th data-field="" data-checkbox="true"></th>
+	        <!-- <th data-field="Serial Number" data-filter-control="select">Serial<br/>Number</th> -->
+            <th data-field="Serial Number" data-sortable = "true" data-filter-control="input">ID</th>
+            <th data-field="Corpus Origin" data-sortable = "true" data-filter-control="input">Corpus<br/>Source</th>
+            <th data-field="Date" data-sortable = "true" data-filter-control="input">Time<br/>Stamp</th>
+            <th data-field="Slip -Type" data-sortable = "true" data-filter-control="input">Slip<br/>Type</th>
+            
+            <th data-field="Orthography Intended Entire Sentence" data-sortable = "true" data-filter-control="input">Intended Sent.<br/>(Orthography)</th>
+            <th data-field="Orthography Perceived Entire Sentence" data-sortable = "true" data-filter-control="input">Perceived Sent.<br/>(Orthography)</th>
+            <th data-field="IPA Intended Entire Sentence (With Tapping and Aspiration)" data-sortable = "true" data-filter-control="input">Intended Sent.<br/>(IPA)</th>
+            <th data-field="IPA Perceived Entire Sentence (With Tapping and Aspiration)" data-sortable = "true" data-filter-control="input">Perceived Sent.<br/>(IPA)</th>
+            <th data-field="Utterer's Geographic background (Country)" data-sortable = "true" data-filter-control="input">Utterer's<br/>Country</th>
+            <th data-field="Perceiver's Geographic background (Country)" data-sortable = "true" data-filter-control="input">Perceiver's<br/>Country</th>
+            <th data-field="Utterer's Geographic background (States)" data-sortable = "true" data-filter-control="input">Utterer's<br/>States</th>
+            <th data-field="Perceiver's Geographic background (States)" data-sortable = "true" data-filter-control="input">Perceiver's<br/>States</th>
+            <th data-field="Utterer's Sex" data-sortable = "true" data-filter-control="input">Utterer's<br/>Sex</th>
+            <th data-field="Perceiver's Sex" data-sortable = "true" data-filter-control="input">Perceiver's<br/>Sex</th>
+            <th data-field="Utterer's Age" data-sortable = "true" data-filter-control="input">Utterer's<br/>Age</th>
+            <th data-field="Perceiver's Age" data-sortable = "true" data-filter-control="input">Perceiver's<br/>Age</th>
+            <th data-field="Utterer's Accent Group" data-sortable = "true" data-filter-control="input">Utterer's<br/>Accent Group</th>
+            <th data-field="Perceiver's Accent Group" data-sortable = "true" data-filter-control="input">Perceiver's<br/>Accent Group</th>
+<!--             Serial Number	Corpus Origin	Date	Orthography Intended Entire Sentence	Orthography Perceived Entire Sentence	IPA Intended Entire Sentence (With Tapping and Aspiration)	IPA Perceived Entire Sentence (With Tapping and Aspiration)	Language Involved	Location - Type	Location – SubType	Slip -Type	Utterer's Geographic background (Country)	Perceiver's Geographic background (Country)	Utterer's Geographic background (States)	Perceiver's Geographic background (States)	Utterer's Sex	Perceiver's Sex	Utterer's Age	Perceiver's Age	Location - Type	Location – SubType	Utterer's Accent Group	Perceiver's Accent Group	IPA Intended Entire Sentence (No Tapping or Aspiration)	IPA Perceived Entire Sentence (No Tapping or Aspiration) -->
+
+
+        </tr>
+        </thead>
+    </table>
+
+<!-- </div>-->
+
+
+<!-- </body> -->
+<!-- </html> -->
+{% endblock %}
+
+
+<!-- <div class = 'row'>
+<div class = 'col-sm-6 col-sm-offset-3'>
+<h1>Explore SLOE</h1>
+<p> This is about us.  This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us.</p>
+<p> This is about us.  This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us.</p>
+<p> This is about us.  This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us.</p>
+
+</div>
+</div> -->

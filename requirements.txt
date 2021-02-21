@@ -1,0 +1,6 @@
+Django==1.8.5
+argparse==1.2.1
+django-crispy-forms==1.5.2
+django-registration-redux==1.2
+whitenoise==3.2.3
+#wsgiref==0.1.2

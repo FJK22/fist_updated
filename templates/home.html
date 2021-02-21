@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block head_title %} {{ block.super }} {% endblock %}
+
+
+<style>
+{% block style %}
+.jumbotron {
+/*	background-color:  #978D85;
+	color: #FFFCFC;*/
+}
+
+{% endblock %}
+</style>
+
+{% block jumbotron %}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class='col-sm-7'>
+			        <h1>The FIST Project</h1>
+			        <p> The Fluency In School Team (FIST) Project</p>
+			        <p> This project site provides details of our various sub-projects as well as serves as a platform for making our fluency toolkits available.</p>
+			        <p> </p>
+<!-- 			        <div class='col-sm-3 text-align-left'>
+				         <a class="btn btn-lg btn-primary" href="/explore" role="button">Explore &raquo;</a>
+			        </div>
+			        <div class='col-sm-3 text-align-left'>
+				         <a class="btn btn-lg btn-primary" href="/contribute" role="button">Contribute &raquo;</a>
+					</div> -->
+			        <a class="btn btn-lg btn-primary" href="/fist.research" role="button">&raquo; FIST Research</a> &nbsp; &nbsp; &nbsp; <a class="btn btn-lg btn-danger" href="/resources" role="button">&raquo; Recordings & Software</a>   &nbsp; &nbsp; &nbsp; <a class="btn btn-lg btn-primary" href="/about" role="button"> &raquo; Meet the Team</a>
+			        </p>
+                    <p>
+                    <h3>License: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></h3>
+			        <p>The FIST Project is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+
+
+			</div>
+			<!-- <div class='col-sm-5' style="background-color:black;height:315px"> -->
+			<!-- <div class='col-sm-5' style="background-color:black;size:315px"> -->
+			<!-- <iframe width="460" height="315" src="https://www.youtube.com/embed/k8gJL3Or_OY" frameborder="0" allowfullscreen></iframe> -->
+			<!-- http://www.duntemann.com/kissguy.gif -->
+			<!-- <img src='{% static "img/UCL-SRG-logo.jpeg" %}' class='img-responsive img-circle'></img> -->
+      <!-- </div> -->
+			<div class="col-sm-5">
+			<p class="lead text-align-center">
+			<iframe width="520" height="293" src="https://www.youtube.com/embed/RJV7JizNRHM?rel=0" frameborder="0" allowfullscreen></iframe>
+		  </p>
+		  </div>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<!-- {{ block.super }} -->
+
+{% endblock %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+	<h1>You're logged in! </h1>
+    {% if queryset %}
+    <h1>Welcome Staff </h1>
+<!--     <table class='table'>
+    {% for instance in queryset %}
+	    <tr><td>{{ instance }}<td>{{ instance.full_name }}<td>{{ instance.timestamp|timesince }}<tr> <br/>
+    {% endfor %}
+    </table> -->
+    <!-- {{ queryset }} -->
+    {% endif %}
+
+{% else %}
+
+
+<div class="row">
+	<div class="col-sm-3 pull-right">
+
+		<p class="lead text-align-center">{{ title }}</p>
+		<p class="text-align-center">{{ subtitle }}</p>
+	<!-- 	{{ user }}
+		{{ request.user }} -->
+		<form method = 'POST' action = ''>{% csrf_token %}
+		<!-- {{ form.as_p }} -->
+		{{ form|crispy }}
+
+		<input class = 'btn btn-primary' type = 'submit' value ='Sign Up' />
+
+		<!-- <input type = 'text'>
+		<input> -->
+
+		</form>
+<a class="twitter-timeline" data-lang="en" data-height="500" data-theme="light" href="https://twitter.com/UCL_SpeechResGr">Tweets by UCL_SpeechResGr</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--		            <a class="twitter-timeline"  href="https://twitter.com/ucl_speechresgr" data-widget-id="323878604746395649">Tweets by @ucl_speechresgr</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+
+	</div>
+<!-- 	<div class="col-sm-3">
+	<p class="lead text-align-center">
+    <div class="well well-small">
+        <h3>Cite</h3>
+
+        Tang, Kevin & Nevins, Andrew 2015.
+<br />
+SLOE Archive.
+<br />
+(Available online at http://sloe-archive.org, Accessed on 2015-10-26.)
+<br />
+
+        <button class="btn" id="cite-button-phoible" onclick="CLLD.Modal.show(&#34;PHOIBLE Online&#34;, &#34;http://phoible.org/void.md.html&#34;)" type="button">cite</button>
+
+            <p></p>
+    </div> -->
+
+	 <!-- </p> -->
+	<!-- </div> -->
+	<!-- <div class="col-sm-9">
+	<p class="lead text-align-center">
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/RJV7JizNRHM?rel=0" frameborder="0" allowfullscreen></iframe>
+  </p>
+  </div> -->
+	<div class="col-sm-9">
+	<p class="lead text-align-center">
+    <h3>Recently completed and ongoing projects:</h3>
+    <table id="table"
+           data-toggle="table"
+           data-show-export="false"
+           data-pagination="false"
+           data-click-to-select="false"
+           data-url="{% static 'json/summary_projects.json' %}"
+           data-toolbar="#toolbar"
+           data-show-columns="false"
+           class="table table-condensed table-striped"
+           >
+        <thead>
+        <tr>
+            <th data-field="title" data-sortable = "true">Title</th>
+						<th data-field="status" data-sortable = "true">Status</th>
+            <th data-field="description" data-sortable = "true">Description</th>
+            <th data-field="publications" data-sortable = "true">Publications</th>
+            <th data-field="tool-availability" data-sortable = "true">Tool availability</th>
+            <!-- <th data-field="project-page" data-sortable = "true">Project Page</th> -->
+
+
+        </tr>
+        </thead>
+    </table>
+
+	</p>
+	</div>
+
+
+</div>
+
+{% endif %}
+
+{% endblock %}

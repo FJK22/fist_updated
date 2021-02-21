@@ -1,0 +1,14 @@
+how to run the project.
+
+1- open command prompt
+
+Type the following lines:
+
+2- cd C:path_where_you_have_saved_the_folder\fist_updated\venv\scripts
+3- activate
+4- cd ..
+5- cd ..
+6- python manage.py runserver
+
+7- go to browser and type localhost:8000 or 127.0.0.1:8000
+
