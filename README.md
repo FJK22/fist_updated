@@ -9,7 +9,7 @@
 * On project initialisation, clone the repository using
 
 ```sh
-git clone https://github.com/JbFiras/Dating-Platform-Prod.git
+git clone https://github.com/FistProject/fist_updated
 ```
 > *Note:* This needs to be done only once
 
@@ -53,3 +53,9 @@ Make sure you run the following code after creating either a new django app, mod
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+## Run the project
+```sh
+python manage.py runserver
+```
+
