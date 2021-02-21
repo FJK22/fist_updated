@@ -17,10 +17,10 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
-
+from newsletter import views as newsletter_views
 urlpatterns = [
-    url(r'^$', 'newsletter.views.home',name='home'),
-    url(r'^contact/$', 'newsletter.views.contact',name='contact'),
+    url(r'^$', newsletter_views.home,name='home'),
+    url(r'^contact/$', newsletter_views.contact,name='contact'),
     #url(r'^contribute/$', 'collector.views.contribute',name='contribute'),
     #url(r'^explore/$', 'browser.views.explore',name='explore'),
     url(r'^resources/$', 'trydjango18.views.resources',name='resources'),
